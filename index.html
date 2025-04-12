@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Team 18 Meeting</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#meeting-notes">Meeting Notes</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+        </ul>
+    </nav>
+<hr/>
+    <header>
+    <h2>Agenda</h2>
+    <ul>
+        <li>Ice breaker/Check-ins</li>
+        <li>Team brand and name</li>
+        <li>Updating team website and Slack channel</li>
+        <li>Team Intro video</li>
+        <li>Card ideas</li>
+    </ul>
+    </header>
+<hr/>
+    <h1>Team 18 Meeting - 04/11</h1>
+
+    <div class="meeting-notes">
+        <h2>Meeting Notes</h2>
+        <section>
+            <h3>Team Brand and Name</h3>
+            <ol>
+                <li><em>Spongebob flowers</em></li>
+                <li><em>Bikini bottom</em></li>
+                <li><em>Bubble Blowing</em></li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Updating team website and Slack channel</h3>
+            <ul>
+                <li>Contact <b>Chen</b> if you want to change anything in the website</li>
+                <p>Or you can do it by yourself</p>
+                <li><strong>Link was updated:</strong> <a href="https://cse110-sp25-group18.github.io/">https://cse110-sp25-group18.github.io/</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Team Intro video</h3>
+            <ul>
+                <li>Picture collage introducing each person</li>
+                <li><i>5 sec</i> individual intro video for each team member by Sunday</li>
+                <li>Send pictures of your hobbies/pets/things about you (as many as you want) to the Slack thread</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Card ideas</h3>
+            <ul>
+                <li>Website recording card collection, price and values</li>
+                <li>card image craft website<details>
+                    <summary>
+                        for example:
+                    </summary>
+                        <a href="https://cardconjurer.app">https://cardconjurer.app</a>
+                </details></li>
+            </ul>
+        </section>
+
+    </div>
+        <section>
+            <h2>TO-DO:</h2>
+            <ul>
+                <li><span>5 second</span> individual videos and pictures of your hobbies: Saturday by 11pm <br>(so that we can get the video together and submit by the Sunday 11:59 deadline)</li>
+                <li>Vote for names on the Slack: whenever :)</li>
+            </ul>
+        </section>
+    <h2>Meeting End</h2>
+    <ul>
+        <li>8:37PM</li>
+    </ul>
+    <video src="video.mp4" controls></video>
+    <img src="image.png" alt="image">
+    <audio src="audio.mp3" controls></audio>
+
+    <footer>
+        <h4>Attendance</h4>
+        <form>
+            <fieldset>
+                <legend>Attendance</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Please enter your name">
+                </div>
+                <div>
+                    <label>Attendance Status:</label>
+                    <input type="radio" id="present" name="attendance" value="present">
+                    <label for="present">Present</label>
+                    <input type="radio" id="absent" name="attendance" value="absent">
+                    <label for="absent">Absent</label>
+                    <input type="radio" id="late" name="attendance" value="late">
+                    <label for="late">Late</label>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="confirm">Confirm information:</label>
+                    <input type="checkbox" id="confirm" name="confirm">
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Please enter your comments"></textarea>
+                </div>
+                <div>
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                        <option value="">Please select</option>
+                        <option value="leader">Leader</option>
+                        <option value="member">Member</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="team">Team:</label>
+                    <input list="teams" id="team" name="team">
+                    <datalist id="teams">
+                        <option value="Development Team">
+                        <option value="Design Team">
+                        <option value="Testing Team">
+                    </datalist>
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+
+</body>
+</html>
