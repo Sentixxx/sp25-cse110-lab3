@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://blog.sentixx.top/Lab2_Starter/
+https://blog.sentixx.top/sp25-cse110-lab3/
