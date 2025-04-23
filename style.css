@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap');
+
 :root {
     --main-color: #bf1111;
     --background-color: #e0f088c0;
@@ -5,8 +7,6 @@
     --secondary-color: rgba(49, 71, 69, 0.8);
     --accent-color: #4cc4ba;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap');
 
 * {
     box-sizing: border-box;
@@ -39,7 +39,7 @@ nav ul li {
 }
 
 h2 + ul {
-    background-color: color(display-p3 0.9 0.8 0.5);
+    background-color: rgba(230, 204, 128, 0.9);
     padding: 10pt;
 }
 
@@ -158,20 +158,20 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 20px;
-    
-    & h4 {
-        text-decoration: underline;
-        margin-bottom: 1em;
-    }
-    
-    & form {
-        max-width: 600px;
-        margin: 0 auto;
-        
-        & div {
-            margin-bottom: 10px;
-        }
-    }
+}
+
+footer h4 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer form div {
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -260,7 +260,7 @@ header {
     background-color: color-mix(in srgb, var(--main-color) 20%, white);
 }
 
-section:has(h3:contains("Card ideas")) {
+section.card-ideas {
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.7);
@@ -269,7 +269,7 @@ section:has(h3:contains("Card ideas")) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-section:has(h3:contains("Card ideas")) ul {
+section.card-ideas ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -277,14 +277,14 @@ section:has(h3:contains("Card ideas")) ul {
     list-style-type: none;
 }
 
-section:has(h3:contains("Card ideas")) li {
+section.card-ideas li {
     flex: 1 1 200px;
     padding: 10px;
     background-color: var(--background-color);
     border-radius: 4px;
 }
 
-section:has(h2:contains("TO-DO")) {
+section.todo {
     display: flex;
     flex-direction: column;
     background-color: #fff8e1;
@@ -294,13 +294,13 @@ section:has(h2:contains("TO-DO")) {
     margin: 2em 0;
 }
 
-section:has(h2:contains("TO-DO")) ul {
+section.todo ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-section:has(h2:contains("TO-DO")) li {
+section.todo li {
     display: flex;
     align-items: center;
     background-color: white;
@@ -309,7 +309,7 @@ section:has(h2:contains("TO-DO")) li {
     border-left: 4px solid var(--main-color);
 }
 
-section:has(h2:contains("TO-DO")) span {
+section.todo span {
     font-weight: bold;
     margin-right: 5px;
     color: var(--main-color);
